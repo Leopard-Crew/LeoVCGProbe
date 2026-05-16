@@ -13,45 +13,45 @@ PLYLIB="$VCGLIB/wrap/ply/plylib.cpp"
 
 echo "Building minimal mesh probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_minimal_probe.cpp \
+    src/probes/vcg_minimal_probe.cpp \
     -o build/vcg_minimal_probe
 
 echo "Building triangle bounding box probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_triangle_bbox_probe.cpp \
+    src/probes/vcg_triangle_bbox_probe.cpp \
     -o build/vcg_triangle_bbox_probe
 
 echo "Building normals probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_normals_probe.cpp \
+    src/probes/vcg_normals_probe.cpp \
     -o build/vcg_normals_probe
 
 echo "Building PLY write probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_ply_write_probe.cpp \
+    src/probes/vcg_ply_write_probe.cpp \
     "$PLYLIB" \
     -o build/vcg_ply_write_probe
 
 echo "Building PLY read probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_ply_read_probe.cpp \
+    src/probes/vcg_ply_read_probe.cpp \
     "$PLYLIB" \
     -o build/vcg_ply_read_probe
 
 echo "Building PLY roundtrip probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_ply_roundtrip_probe.cpp \
+    src/probes/vcg_ply_roundtrip_probe.cpp \
     "$PLYLIB" \
     -o build/vcg_ply_roundtrip_probe
 
 echo "Building STL ASCII roundtrip probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_stl_roundtrip_probe.cpp \
+    src/probes/vcg_stl_roundtrip_probe.cpp \
     -o build/vcg_stl_roundtrip_probe
 
 echo "Building STL binary roundtrip probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
-    src/vcg_stl_binary_roundtrip_probe.cpp \
+    src/probes/vcg_stl_binary_roundtrip_probe.cpp \
     -o build/vcg_stl_binary_roundtrip_probe
 
 echo "Running minimal mesh probe..."
