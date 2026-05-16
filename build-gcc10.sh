@@ -9,6 +9,7 @@ mkdir -p build
 
 COMMON_FLAGS="-std=c++17 $LEOPARD_GCC10_STATIC_FLAGS -DEIGEN_DONT_VECTORIZE -DEIGEN_DONT_ALIGN_STATICALLY -DEIGEN_MAX_ALIGN_BYTES=0"
 COMMON_INCLUDES="-I$VCGLIB -I$VCGLIB/eigenlib"
+PLYLIB="$VCGLIB/wrap/ply/plylib.cpp"
 
 echo "Building minimal mesh probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
@@ -28,8 +29,14 @@ g++ $COMMON_FLAGS $COMMON_INCLUDES \
 echo "Building PLY write probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
     src/vcg_ply_write_probe.cpp \
-    vendor/vcglib/wrap/ply/plylib.cpp \
+    "$PLYLIB" \
     -o build/vcg_ply_write_probe
+
+echo "Building PLY read probe..."
+g++ $COMMON_FLAGS $COMMON_INCLUDES \
+    src/vcg_ply_read_probe.cpp \
+    "$PLYLIB" \
+    -o build/vcg_ply_read_probe
 
 echo "Running minimal mesh probe..."
 ./build/vcg_minimal_probe
@@ -46,8 +53,12 @@ echo "Running PLY write probe..."
 echo "PLY output header:"
 head -20 build/vcg_triangle_write_probe.ply
 
+echo "Running PLY read probe..."
+./build/vcg_ply_read_probe
+
 echo "Runtime dependencies:"
 otool -L build/vcg_minimal_probe
 otool -L build/vcg_triangle_bbox_probe
 otool -L build/vcg_normals_probe
 otool -L build/vcg_ply_write_probe
+otool -L build/vcg_ply_read_probe
