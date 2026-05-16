@@ -44,10 +44,15 @@ g++ $COMMON_FLAGS $COMMON_INCLUDES \
     "$PLYLIB" \
     -o build/vcg_ply_roundtrip_probe
 
-echo "Building STL roundtrip probe..."
+echo "Building STL ASCII roundtrip probe..."
 g++ $COMMON_FLAGS $COMMON_INCLUDES \
     src/vcg_stl_roundtrip_probe.cpp \
     -o build/vcg_stl_roundtrip_probe
+
+echo "Building STL binary roundtrip probe..."
+g++ $COMMON_FLAGS $COMMON_INCLUDES \
+    src/vcg_stl_binary_roundtrip_probe.cpp \
+    -o build/vcg_stl_binary_roundtrip_probe
 
 echo "Running minimal mesh probe..."
 ./build/vcg_minimal_probe
@@ -70,11 +75,17 @@ echo "Running PLY read probe..."
 echo "Running PLY roundtrip probe..."
 ./build/vcg_ply_roundtrip_probe
 
-echo "Running STL roundtrip probe..."
+echo "Running STL ASCII roundtrip probe..."
 ./build/vcg_stl_roundtrip_probe
 
-echo "STL output preview:"
+echo "STL ASCII output preview:"
 head -20 build/vcg_triangle_roundtrip_probe.stl
+
+echo "Running STL binary roundtrip probe..."
+./build/vcg_stl_binary_roundtrip_probe
+
+echo "STL binary header/count preview:"
+od -An -tx1 -N 96 build/vcg_triangle_binary_roundtrip_probe.stl
 
 echo "Runtime dependencies:"
 otool -L build/vcg_minimal_probe
@@ -84,3 +95,4 @@ otool -L build/vcg_ply_write_probe
 otool -L build/vcg_ply_read_probe
 otool -L build/vcg_ply_roundtrip_probe
 otool -L build/vcg_stl_roundtrip_probe
+otool -L build/vcg_stl_binary_roundtrip_probe
