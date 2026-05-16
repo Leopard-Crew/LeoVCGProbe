@@ -20,12 +20,21 @@ g++ $COMMON_FLAGS $COMMON_INCLUDES \
     src/vcg_triangle_bbox_probe.cpp \
     -o build/vcg_triangle_bbox_probe
 
+echo "Building normals probe..."
+g++ $COMMON_FLAGS $COMMON_INCLUDES \
+    src/vcg_normals_probe.cpp \
+    -o build/vcg_normals_probe
+
 echo "Running minimal mesh probe..."
 ./build/vcg_minimal_probe
 
 echo "Running triangle bounding box probe..."
 ./build/vcg_triangle_bbox_probe
 
+echo "Running normals probe..."
+./build/vcg_normals_probe
+
 echo "Runtime dependencies:"
 otool -L build/vcg_minimal_probe
 otool -L build/vcg_triangle_bbox_probe
+otool -L build/vcg_normals_probe
