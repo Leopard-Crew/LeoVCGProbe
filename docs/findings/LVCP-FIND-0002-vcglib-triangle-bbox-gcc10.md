@@ -40,7 +40,7 @@ The GCC runtime is linked statically:
 ## Runtime result
 
 ```text
-LeoVCGProbe triangle bounding box probe ran.
+LeoVCG triangle bounding box probe ran.
 Vertices: 3
 Faces: 1
 Bounding box min: 0, 0, 0

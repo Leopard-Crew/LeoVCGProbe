@@ -1,8 +1,8 @@
-# LeoVCGProbe
+# LeoVCG
 
 ## Leopard/PPC VCGlib baseline
 
-LeoVCGProbe verifies whether unmodified VCGlib can be used on Mac OS X Leopard 10.5.8 / PowerPC.
+LeoVCG verifies whether unmodified VCGlib can be used on Mac OS X Leopard 10.5.8 / PowerPC.
 
 Current baseline result:
 

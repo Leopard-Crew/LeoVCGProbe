@@ -40,7 +40,7 @@ The GCC runtime is linked statically:
 ## Runtime result
 
 ```text
-LeoVCGProbe normals probe ran.
+LeoVCG normals probe ran.
 Vertices: 3
 Faces: 1
 Face normal: 0, 0, 1

@@ -66,7 +66,7 @@ int main()
 
     const int err = vcg::tri::io::ImporterPLY<LeoMesh>::Open(mesh, inputPath);
 
-    std::cout << "LeoVCGProbe PLY read probe ran." << std::endl;
+    std::cout << "LeoVCG PLY read probe ran." << std::endl;
     std::cout << "Importer result: " << err << std::endl;
     std::cout << "Input path: " << inputPath << std::endl;
 

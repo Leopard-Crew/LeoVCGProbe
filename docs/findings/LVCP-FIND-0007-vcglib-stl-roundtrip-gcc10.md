@@ -40,7 +40,7 @@ The GCC runtime is linked statically:
 ## Runtime result
 
 ```text
-LeoVCGProbe STL roundtrip probe ran.
+LeoVCG STL roundtrip probe ran.
 Export result: 0
 Import result: 0
 Load mask: 65

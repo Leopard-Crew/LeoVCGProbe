@@ -41,7 +41,7 @@ The GCC runtime is linked statically:
 ## Runtime result
 
 ```text
-LeoVCGProbe PLY roundtrip probe ran.
+LeoVCG PLY roundtrip probe ran.
 Export result: 0
 Import result: 0
 Roundtrip path: build/vcg_triangle_roundtrip_probe.ply

@@ -89,7 +89,7 @@ int main()
     const int exportErr = vcg::tri::io::ExporterPLY<LeoMesh>::Save(sourceMesh, roundtripPath, false);
     const int importErr = vcg::tri::io::ImporterPLY<LeoMesh>::Open(importedMesh, roundtripPath);
 
-    std::cout << "LeoVCGProbe PLY roundtrip probe ran." << std::endl;
+    std::cout << "LeoVCG PLY roundtrip probe ran." << std::endl;
     std::cout << "Export result: " << exportErr << std::endl;
     std::cout << "Import result: " << importErr << std::endl;
     std::cout << "Roundtrip path: " << roundtripPath << std::endl;

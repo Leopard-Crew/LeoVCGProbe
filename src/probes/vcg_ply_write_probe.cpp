@@ -72,7 +72,7 @@ int main()
 
     const int err = vcg::tri::io::ExporterPLY<LeoMesh>::Save(mesh, outputPath, false);
 
-    std::cout << "LeoVCGProbe PLY write probe ran." << std::endl;
+    std::cout << "LeoVCG PLY write probe ran." << std::endl;
     std::cout << "Exporter result: " << err << std::endl;
     std::cout << "Output path: " << outputPath << std::endl;
 

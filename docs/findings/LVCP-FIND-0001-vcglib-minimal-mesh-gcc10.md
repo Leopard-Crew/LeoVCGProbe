@@ -17,7 +17,7 @@ This finding verifies whether the vendored VCGlib source tree can be included an
 
 ## Source layout
 
-- Project: `LeoVCGProbe`
+- Project: `LeoVCG`
 - Vendored source: `vendor/vcglib`
 - Probe source: `src/vcg_minimal_probe.cpp`
 - Build harness: `build-gcc10.sh`
@@ -29,7 +29,7 @@ The minimal VCGlib mesh probe builds and runs successfully.
 Runtime output:
 
 ```text
-LeoVCGProbe minimal mesh compiled and ran.
+LeoVCG minimal mesh compiled and ran.
 Vertices: 0
 Faces: 0
 ````

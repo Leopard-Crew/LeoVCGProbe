@@ -34,7 +34,7 @@ int main()
 {
     LeoMesh mesh;
 
-    std::cout << "LeoVCGProbe minimal mesh compiled and ran." << std::endl;
+    std::cout << "LeoVCG minimal mesh compiled and ran." << std::endl;
     std::cout << "Vertices: " << mesh.vert.size() << std::endl;
     std::cout << "Faces: " << mesh.face.size() << std::endl;
 

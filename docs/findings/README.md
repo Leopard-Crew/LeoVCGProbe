@@ -1,6 +1,6 @@
-# LeoVCGProbe Findings
+# LeoVCG Findings
 
-This directory contains verified Leopard/PPC findings for unmodified VCGlib under the LeoVCGProbe build harness.
+This directory contains verified Leopard/PPC findings for unmodified VCGlib under the LeoVCG build harness.
 
 ## Findings
 

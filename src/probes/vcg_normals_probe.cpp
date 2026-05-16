@@ -74,7 +74,7 @@ int main()
 
     vcg::tri::UpdateNormal<LeoMesh>::PerVertexNormalizedPerFaceNormalized(mesh);
 
-    std::cout << "LeoVCGProbe normals probe ran." << std::endl;
+    std::cout << "LeoVCG normals probe ran." << std::endl;
     std::cout << "Vertices: " << mesh.vert.size() << std::endl;
     std::cout << "Faces: " << mesh.face.size() << std::endl;
 

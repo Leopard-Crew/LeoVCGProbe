@@ -113,7 +113,7 @@ int main()
     const int importErr =
         vcg::tri::io::ImporterSTL<LeoMesh>::Open(importedMesh, roundtripPath, loadMask);
 
-    std::cout << "LeoVCGProbe STL roundtrip probe ran." << std::endl;
+    std::cout << "LeoVCG STL roundtrip probe ran." << std::endl;
     std::cout << "Export result: " << exportErr << std::endl;
     std::cout << "Import result: " << importErr << std::endl;
     std::cout << "Load mask: " << loadMask << std::endl;

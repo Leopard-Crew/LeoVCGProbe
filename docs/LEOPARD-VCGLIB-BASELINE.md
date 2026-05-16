@@ -2,7 +2,7 @@
 
 ## Purpose
 
-LeoVCGProbe verifies whether unmodified VCGlib can be used as a practical mesh-processing baseline on Mac OS X Leopard 10.5.8 / PowerPC.
+LeoVCG verifies whether unmodified VCGlib can be used as a practical mesh-processing baseline on Mac OS X Leopard 10.5.8 / PowerPC.
 
 This project does not port or patch VCGlib.
 

@@ -41,7 +41,7 @@ The GCC runtime is linked statically:
 ## Runtime result
 
 ```text
-LeoVCGProbe PLY write probe ran.
+LeoVCG PLY write probe ran.
 Exporter result: 0
 Output path: build/vcg_triangle_write_probe.ply
 PLY write check: OK

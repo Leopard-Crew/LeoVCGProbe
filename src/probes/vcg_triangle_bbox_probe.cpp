@@ -56,7 +56,7 @@ int main()
 
     vcg::tri::UpdateBounding<LeoMesh>::Box(mesh);
 
-    std::cout << "LeoVCGProbe triangle bounding box probe ran." << std::endl;
+    std::cout << "LeoVCG triangle bounding box probe ran." << std::endl;
     std::cout << "Vertices: " << mesh.vert.size() << std::endl;
     std::cout << "Faces: " << mesh.face.size() << std::endl;
 
